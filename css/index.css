@@ -7,6 +7,17 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+@font-face {
+  font-family: 'webfont';
+  font-display: swap;
+  src: url('//at.alicdn.com/t/webfont_l3v6xa65z0r.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_l3v6xa65z0r.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_l3v6xa65z0r.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_l3v6xa65z0r.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_l3v6xa65z0r.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_l3v6xa65z0r.svg#AlibabaPuHuiTiL') format('svg'); /* iOS 4.1- */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -58,15 +69,31 @@ body {
 
 }
 
-.mes {
+#bgmusic {
   display: none;
-  font-family: 'Indie Flower', cursive;
-  color: white;
-  font-size: 6rem;
+}
+
+.mes {
   position: absolute;
-  bottom: 60%;
+  top: 35%;
   left: 0;
   width: 100%;
+  display: none;
+}
+
+.mes span {
+  font-family: 'Indie Flower', cursive;
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.mes p {
+  font-family: 'webfont', cursive;
+  color: white;
+  font-size: 4.5rem;
   text-align: center;
 }
 

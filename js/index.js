@@ -90,6 +90,7 @@ document.addEventListener( 'click', function (e) {
   $('.ins').fadeOut();
   $('.mes').delay(700).fadeIn();
   $('.people').delay(700).fadeIn();
+  document.getElementById('bgmusic').play();
   
   const rotation = () => Math.floor(Math.random() * 20);
   const degreeShift = () => {
