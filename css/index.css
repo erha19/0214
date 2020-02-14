@@ -1,0 +1,94 @@
+/* latin */
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Indie Flower'), local('IndieFlower'), url(../assets/fonts.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  padding: 0;
+}
+
+body {
+  background: url(../assets/bg.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#star-sky {
+  background: linear-gradient(#00111e 30%, #033d5e);
+  vertical-align: bottom;
+  height: 100vh;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 500px;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.overlay .wrap {
+  position : absolute;
+  top : 0;
+  left : 0;
+  width: 650px;
+  height: 650px;
+}
+
+.ins {
+  font-family: 'Indie Flower', cursive;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  font-size: 5rem;
+  pointer-events: none;
+  text-align: center;
+
+}
+
+.mes {
+  display: none;
+  font-family: 'Indie Flower', cursive;
+  color: white;
+  font-size: 6rem;
+  position: absolute;
+  bottom: 60%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.white-out:after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,.5);
+}
+
+.people {
+  display: none;
+  position: fixed;
+  background: url(../assets/people.png) center center no-repeat;
+  background-size: 100%;
+  width: 50rem;
+  height: 50rem;
+  bottom: 0;
+  right: 0;
+}
