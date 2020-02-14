@@ -84,7 +84,7 @@ body {
 .people {
   display: none;
   position: fixed;
-  background: url(../assets/people.png) center center no-repeat;
+  background: url(../assets/people.png) center bottom no-repeat;
   background-size: 100%;
   width: 50rem;
   height: 50rem;

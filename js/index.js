@@ -131,7 +131,7 @@ const y = c.height = window.innerHeight;
 const nStar = Math.round((x + y)/5);
 const randomSize = Math.floor((Math.random()*2)+1);
 
-const stars = [];
+let stars = [];
 function createStars() {
     'use strict';
     stars = [];
